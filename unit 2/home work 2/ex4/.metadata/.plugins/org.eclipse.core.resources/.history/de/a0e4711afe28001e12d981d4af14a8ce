@@ -1,0 +1,30 @@
+/*
+ ============================================================================
+ Name        : ex4.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+int main(void) {
+	int n;
+	printf("enter the number\n");
+	scanf("%d",&n);
+	if(n>0)
+	{
+		printf("%d is a positive number",n);
+
+	}
+	else if (n<0)
+	{
+		printf("%d is a negative number",n);
+	}
+	else
+	{
+		printf("you entered zero");
+	}
+}

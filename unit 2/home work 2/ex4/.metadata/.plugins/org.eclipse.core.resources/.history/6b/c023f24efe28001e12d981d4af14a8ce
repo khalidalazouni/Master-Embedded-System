@@ -1,0 +1,31 @@
+/*
+ ============================================================================
+
+Lesson 3 c basics
+Ex4_homework2
+Created on : 23/7/2023
+Author:Khalid walid alazouni
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+int main(void) {
+	setbuf(stdout,NULL); //TO SOLVE INPUT/OUTPUT BUFFER BUG
+	int n;
+	printf("enter the number\n");
+	scanf("%d",&n);
+	if(n>0)
+	{
+		printf("%d is a positive number",n);
+
+	}
+	else if (n<0)
+	{
+		printf("%d is a negative number",n);
+	}
+	else
+	{
+		printf("you entered zero");
+	}
+}

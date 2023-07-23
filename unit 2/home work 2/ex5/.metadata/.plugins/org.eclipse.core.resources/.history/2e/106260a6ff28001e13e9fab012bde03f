@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+Lesson 3 c basics
+Ex2_homework1
+Created on : 23/7/2023
+Author:Khalid walid alazouni
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+int main(void) {
+	setbuf(stdout,NULL); //TO SOLVE INPUT/OUTPUT BUFFER BUG
+	char a;
+	printf("enter a character\n");
+	scanf("%c",&a);
+	if(((a>=81)&&(a<=106))||((a>=97)&&(a<=122))){
+		printf("%c is an alphapet",a);
+	}
+	else{
+		printf("%c is not an alphapet",a);
+	}
+}

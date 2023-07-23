@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+ Name        : ex6.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+int main(void) {
+	setbuf(stdout,NULL); //TO SOLVE INPUT/OUTPUT BUFFER BUG
+	int n,i;
+	int sum=0;
+	printf("enter an integer\n");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+		sum+=i;
+	}
+	printf("sum =%d",sum);
+
+}

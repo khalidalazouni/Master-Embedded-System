@@ -1,0 +1,20 @@
+/*
+ ============================================================================
+ Name        : ex2.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+
+int main(void) {
+	setbuf(stdout,NULL); //TO SOLVE INPUT/OUTPUT BUFFER BUG
+	int N;
+	printf("please enter an integer number");
+	scanf("%d",&N);
+	printf("the number you interd is %d",N);
+}

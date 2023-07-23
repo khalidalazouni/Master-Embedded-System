@@ -1,0 +1,26 @@
+/*
+ ============================================================================
+ Name        : ex6.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+int main(void) {
+	float a,b;
+	float temp;
+	printf("enter value of a:\n");
+	scanf("%f",&a);
+	printf("enter value of b:\n");
+	scanf("%f",&b);
+	temp=a;
+	a=b;
+	b=temp;
+	printf("after swapping value of a : %f\n after swapping value of b =%f",a,b);
+
+	return 0;
+}

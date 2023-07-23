@@ -1,0 +1,39 @@
+/*
+ ============================================================================
+ Name        : ex8.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+int main(void) {
+	setbuf(stdout,NULL); //TO SOLVE INPUT/OUTPUT BUFFER BUG
+	float n1,n2;
+	char operator;
+	float result =0;
+	printf("enter operator either + or - or * or divide\n");
+	scanf("%c",&operator);
+	printf("enter two numbers\n");
+	scanf("%f%f",&n1,&n2);
+	switch (operator){
+	case '+':
+		result=n1+n2;
+		break;
+	case '-':
+		result=n1-n2;
+		break;
+	case '*':
+		result=n1*n2;
+		break;
+	case '/':
+		result=n1/n2;
+		break;
+	}
+	printf("%f%c%f =%f",n1,operator,n2,result);
+
+
+}

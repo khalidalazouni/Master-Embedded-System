@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : ex4.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float n1,n2;
+	float product=0;
+	printf("enter two numbers\n");
+	scanf("%f%f",&n1,&n2);
+	product=n1*n2;
+	printf("the product is %f",product);
+
+	return 0;
+}

@@ -1,0 +1,36 @@
+/*
+ ============================================================================
+
+Lesson 3 c basics
+Ex3_homework2
+Created on : 23/7/2023
+Author:Khalid walid alazouni
+ ============================================================================
+ */#include <stdio.h>
+ int main(void) {
+	 setbuf(stdout,NULL); //TO SOLVE INPUT/OUTPUT BUFFER BUG
+	 float n1,n2,n3;
+	 printf("enter three numbers\n");
+	 scanf("%f%f%f",&n1,&n2,&n3);
+	 if(n1>n2){
+		 if(n1>n3)
+		 {
+			 printf("largest number = %f",n1);
+		 }
+		 else
+		 {
+			 printf(" the largest = %f",n3);
+		 }
+	 }
+	 else
+	 {
+		 if(n2>n3){
+			 printf("the largest = %f",n2);
+		 }
+		 else
+		 {
+			 printf("the largest = %f",n3);
+		 }
+	 }
+ }
+
