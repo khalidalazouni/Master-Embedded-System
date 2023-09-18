@@ -1,0 +1,41 @@
+/*startup_cortexm3.s
+khalid alazouni*/
+/*SRAM_Start_Addres 0x20000000*/
+.section .vectors
+
+.word  0x20001000         /*stack top address*/
+.word  _reset             /*reset handler*/
+.word  vector_handler     /*NMI*/
+.word  vector_handler     /*Hard Falt*/
+.word  vector_handler     /*Memmory Management*/ 
+.word  vector_handler     /*Bus Fault*/
+.word  vector_handler     /*Usage Fault*/ 
+.word  vector_handler     /*Reserved*/
+.word  vector_handler     /*Reserved*/
+.word  vector_handler     /*Reserved*/
+.word  vector_handler     /*SVCall*/
+.word  vector_handler     /*Debug Monitor*/
+.word  vector_handler     /*Reserved*/
+.word  vector_handler     /*PendSV*/
+.word  vector_handler     /*SysTick*/
+.word  vector_handler     /*WWDG*/
+.word  vector_handler     /*PVD*/
+.word  vector_handler     /*TAMPER*/
+.word  vector_handler     /*RTC*/
+.word  vector_handler     /*FLASH*/
+.word  vector_handler     /*RCC*/
+.word  vector_handler     /*EXT10*/
+.word  vector_handler     /*EXT11*/
+.word  vector_handler     /*EXT12*/
+
+
+.section .text
+.thumb_func
+
+_reset: 
+	bl main 
+	
+stop: b stop
+
+vector_handler:
+	b _reset
